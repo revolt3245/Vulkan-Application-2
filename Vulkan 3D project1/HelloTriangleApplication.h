@@ -28,11 +28,11 @@
 #include "Vertices.h"
 #include "UniformBufferObject.h"
 
-class HelloTriangleApplication
+class Canvas
 {
 public:
-	HelloTriangleApplication() {};
-	HelloTriangleApplication(Shape x) : shape(x) {};
+	Canvas() {};
+	Canvas(Shape x) :shape(x) {};
 	void run();
 private:
 	void initWindow();
@@ -157,12 +157,8 @@ private:
 
 	VkBuffer vertexBuffer;
 	VkDeviceMemory vertexBufferMemory;
-	//std::vector<VkBuffer> vertexBuffers;
-	//std::vector<VkDeviceMemory> vertexBufferMemories;
 	VkBuffer indexBuffer;
 	VkDeviceMemory indexBufferMemory;
-	//std::vector<VkBuffer> indexBuffers;
-	//std::vector<VkDeviceMemory> indexBufferMemories;
 	std::vector<VkBuffer> uniformBuffers;
 	std::vector<VkDeviceMemory> uniformBufferMemories;
 
